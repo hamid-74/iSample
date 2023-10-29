@@ -1,0 +1,57 @@
+(tensorflow2_p36) [root@ip-172-31-43-244 codes]# python3 client.py 
+2021-06-07 00:02:18.860255: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2021-06-07 00:02:23.909431: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2021-06-07 00:02:24.003798: E tensorflow/stream_executor/cuda/cuda_driver.cc:328] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-06-07 00:02:24.003994: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (ip-172-31-43-244.eu-central-1.compute.internal): /proc/driver/nvidia/version does not exist
+2021-06-07 00:02:24.004438: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-06-07 00:02:25.095296: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 153600000 exceeds 10% of free system memory.
+2021-06-07 00:02:25.312594: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-06-07 00:02:25.313213: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 2400055000 Hz
+1563/1563 [==============================] - 74s 47ms/step - loss: 1.8227 - accuracy: 0.3764 - val_loss: 1.6592 - val_accuracy: 0.4169
+before averaging:
+313/313 - 4s - loss: 1.6592 - accuracy: 0.4169
+request: 0
+313/313 - 4s - loss: 2.2822 - accuracy: 0.1056
+after averaging: [2.282188653945923, 0.10559999942779541]
+2021-06-07 00:04:04.611974: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 153600000 exceeds 10% of free system memory.
+1563/1563 [==============================] - 72s 46ms/step - loss: 1.4991 - accuracy: 0.4607 - val_loss: 1.2840 - val_accuracy: 0.5403
+before averaging:
+313/313 - 4s - loss: 1.2840 - accuracy: 0.5403
+request: 0
+313/313 - 4s - loss: 1.4177 - accuracy: 0.5098
+after averaging: [1.4176768064498901, 0.5098000168800354]
+2021-06-07 00:05:43.156878: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 153600000 exceeds 10% of free system memory.
+1563/1563 [==============================] - 72s 46ms/step - loss: 1.2276 - accuracy: 0.5654 - val_loss: 1.1757 - val_accuracy: 0.5892
+before averaging:
+313/313 - 4s - loss: 1.1757 - accuracy: 0.5892
+request: 0
+313/313 - 4s - loss: 1.0634 - accuracy: 0.6285
+after averaging: [1.0634233951568604, 0.6284999847412109]
+2021-06-07 00:07:21.603406: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 153600000 exceeds 10% of free system memory.
+1563/1563 [==============================] - 72s 46ms/step - loss: 1.0538 - accuracy: 0.6318 - val_loss: 1.0603 - val_accuracy: 0.6305
+before averaging:
+313/313 - 4s - loss: 1.0603 - accuracy: 0.6305
+request: 0
+313/313 - 4s - loss: 0.9783 - accuracy: 0.6603
+after averaging: [0.9782868027687073, 0.6603000164031982]
+2021-06-07 00:09:00.676562: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 153600000 exceeds 10% of free system memory.
+1563/1563 [==============================] - 72s 46ms/step - loss: 0.9516 - accuracy: 0.6692 - val_loss: 1.0318 - val_accuracy: 0.6552
+before averaging:
+313/313 - 4s - loss: 1.0318 - accuracy: 0.6552
+request: 0
+313/313 - 4s - loss: 0.9679 - accuracy: 0.6705
+after averaging: [0.9678897261619568, 0.6704999804496765]
+1563/1563 [==============================] - 72s 46ms/step - loss: 0.8764 - accuracy: 0.6964 - val_loss: 1.0312 - val_accuracy: 0.6530
+before averaging:
+313/313 - 4s - loss: 1.0312 - accuracy: 0.6530
+request: 0
+313/313 - 4s - loss: 0.9419 - accuracy: 0.6797
+after averaging: [0.9418971538543701, 0.6797000169754028]
+1563/1563 [==============================] - 72s 46ms/step - loss: 0.8081 - accuracy: 0.7174 - val_loss: 1.0550 - val_accuracy: 0.6511
+before averaging:
+313/313 - 4s - loss: 1.0550 - accuracy: 0.6511
+request: 0
+313/313 - 4s - loss: 0.9492 - accuracy: 0.6857
+after averaging: [0.9492481350898743, 0.685699999332428]
+(tensorflow2_p36) [root@ip-172-31-43-244 codes]# 

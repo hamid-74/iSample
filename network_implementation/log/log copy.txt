@@ -1,0 +1,5 @@
+selective federated learning accuracy: global model accuracy: 0.6359000205993652Epoch: 19
+simple federated learning accuracy: global model accuracy: 0.6226999759674072Epoch: 19
+
+selective global model accuracy: 0.685699999332428Epoch: 39
+simple: global model accuracy: 0.7006000280380249Epoch: 39
